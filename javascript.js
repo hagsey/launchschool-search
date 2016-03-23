@@ -83,8 +83,9 @@ $(function() {
      });
 
      matches.forEach(function(item) {
-      $items.filter('[data-id=' + item.id + ']').toggle(); // Everything works up until this point
-     });
+      $items.hide();
+       console.log($items.filter('[data-id=' + item.id + ']').show()); //Only shows the first item in matches	
+      });
   });
 
 });
